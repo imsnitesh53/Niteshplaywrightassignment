@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - alert [ref=e6]:
+    - img [ref=e8]
+    - generic [ref=e10]: "Warning: You are logged into a demo account. Some functionality (slide upload, manual stain ordering, slide download) is not available in this mode. Please contact support@pictorlabs.ai with any questions."
+  - banner [ref=e11]:
+    - generic [ref=e13]:
+      - img [ref=e15] [cursor=pointer]
+      - generic [ref=e17]:
+        - img "Support" [ref=e18] [cursor=pointer]
+        - button "more" [ref=e20] [cursor=pointer]:
+          - img "pictor.newqa.guest2@pictorlabs.ai" [ref=e21] [cursor=pointer]
+        - generic [ref=e25] [cursor=pointer]: PictorLabs Hiring Org
+  - generic [ref=e27]:
+    - img [ref=e29]
+    - list [ref=e30]:
+      - listitem [ref=e31]:
+        - button "Dashboard" [active] [ref=e32] [cursor=pointer]:
+          - img [ref=e34] [cursor=pointer]
+          - generic:
+            - generic: Dashboard
+      - listitem [ref=e35]:
+        - button "Model" [ref=e36] [cursor=pointer]:
+          - img [ref=e38] [cursor=pointer]
+          - generic:
+            - generic: Model
+      - listitem [ref=e39]:
+        - button "Reports" [ref=e40] [cursor=pointer]:
+          - img [ref=e42] [cursor=pointer]
+          - generic:
+            - generic: Reports
+      - listitem [ref=e43]:
+        - button "Uploads" [ref=e44] [cursor=pointer]:
+          - img [ref=e46] [cursor=pointer]
+          - generic:
+            - generic: Uploads
+    - button [ref=e47] [cursor=pointer]:
+      - img [ref=e48] [cursor=pointer]
+  - main [ref=e50]:
+    - generic [ref=e52]:
+      - heading "Organization Activity" [level=6] [ref=e53]
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img "Layers icon" [ref=e59]
+            - heading "Slide Overview" [level=5] [ref=e60]
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: Total WSI Slides Scanned
+              - heading "0" [level=6] [ref=e64]
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: Total VSI Slides Stained
+              - heading "0" [level=6] [ref=e67]
+            - generic [ref=e68]:
+              - paragraph [ref=e69]: Total Downloads
+              - heading "0" [level=6] [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: Scanned Slides Quality
+                - generic [ref=e74]:
+                  - paragraph [ref=e75]: Pass
+                  - paragraph [ref=e76]: /
+                  - paragraph [ref=e77]: Fail
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - heading "0" [level=6] [ref=e80]
+                  - heading "0" [level=6] [ref=e81]
+                - progressbar [ref=e82]
+        - separator [ref=e84]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - img "Copy icon" [ref=e88]
+            - heading "Stain Usage Overview" [level=5] [ref=e89]
+          - generic [ref=e91]:
+            - generic [ref=e94]:
+              - combobox [ref=e95]: Q3 July - September 2025
+              - button "Open" [ref=e97] [cursor=pointer]:
+                - img [ref=e98] [cursor=pointer]
+              - group
+            - paragraph [ref=e102]: Loading chart data...
+        - img [ref=e108]
+      - generic [ref=e115]:
+        - heading "Organization Overview" [level=6] [ref=e116]
+        - paragraph [ref=e117]: All Organization Slides
+      - generic [ref=e118]:
+        - tablist [ref=e122]:
+          - tab "Slides" [selected] [ref=e123] [cursor=pointer]
+          - tab "Projects" [ref=e124] [cursor=pointer]
+        - generic [ref=e126]:
+          - generic [ref=e127]:
+            - generic [ref=e129]:
+              - img [ref=e130]
+              - textbox "Search" [ref=e132]
+              - group
+            - generic [ref=e133]:
+              - button "Add Filters" [ref=e136] [cursor=pointer]:
+                - generic [ref=e137] [cursor=pointer]:
+                  - img [ref=e138] [cursor=pointer]
+                  - heading "Add Filters" [level=6] [ref=e140] [cursor=pointer]
+              - generic [ref=e141]:
+                - button "Upload Upload Slides":
+                  - generic:
+                    - img "Upload"
+                    - generic: Upload Slides
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic:
+                  - button "Create / Add to Project" [disabled]:
+                    - generic:
+                      - img
+                      - generic: Create / Add to Project
+              - generic [ref=e144]:
+                - button "Order Stains" [disabled]
+            - generic [ref=e145]:
+              - generic "You can only override Failed QC Slides that haven't been overridden before.":
+                - button "Override" [disabled]
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e149] [cursor=pointer]:
+                - checkbox [ref=e150] [cursor=pointer]
+                - img [ref=e151] [cursor=pointer]
+              - generic [ref=e154]: QC
+              - button "Slide Name" [ref=e157] [cursor=pointer]:
+                - text: Slide Name
+                - img [ref=e158] [cursor=pointer]
+              - button "Image Type" [ref=e162] [cursor=pointer]:
+                - text: Image Type
+                - img [ref=e163] [cursor=pointer]
+              - button "Date" [ref=e167] [cursor=pointer]:
+                - text: Date
+                - img [ref=e168] [cursor=pointer]
+              - generic [ref=e171]: Stains
+              - generic [ref=e173]: Tissue Type
+              - generic [ref=e175]: Species
+            - generic [ref=e176]: No data available
+            - generic [ref=e179]:
+              - paragraph
+```

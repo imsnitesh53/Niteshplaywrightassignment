@@ -1,0 +1,12 @@
+Performing click action on: locator('//p[text()="Sign In"]')
+Asserting visibility of element: locator('label[for="username"]')
+Entering text "pictor.newqa.guest2@pictorlabs.ai" in: locator('input#username')
+Asserting visibility of element: locator('input#password')
+Entering text "u7@RRx9qGQVEh6U" in: locator('input#password')
+Performing click action on: locator('button[type="submit"][data-action-button-primary="true"]')
+Asserting visibility of element: locator('[data-testid="ChevronRightIcon"]')
+Performing click action on: locator('xpath=(//ul/li[contains(@class, \'MuiListItem-root\')])[4]')
+Asserting url of page: /uploads
+Performing click action on: locator('//button[@role="tab" and normalize-space(text())="Completed"]')
+Asserting visibility of element: locator('//h2[normalize-space(text())="Slide Upload History"]')
+Asserting visibility of element: locator('//p[contains(text(),"View slide(s) upload history")]')

@@ -1,0 +1,8 @@
+Performing click action on: locator('//p[text()="Sign In"]')
+Asserting visibility of element: locator('label[for="username"]')
+Entering text "invalidemail@yopmail.com" in: locator('input#username')
+Asserting visibility of element: locator('input#password')
+Entering text "u7@RRx9qGQVEh6U" in: locator('input#password')
+Performing click action on: locator('button[type="submit"][data-action-button-primary="true"]')
+Asserting visibility of element: locator('[id="error-element-password"]')
+Asserting invisibility of element: locator('[data-testid="ChevronRightIcon"]')

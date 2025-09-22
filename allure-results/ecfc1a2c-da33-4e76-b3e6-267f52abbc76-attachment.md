@@ -1,0 +1,124 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - alert [ref=e6]:
+    - img [ref=e8]
+    - generic [ref=e10]: "Warning: You are logged into a demo account. Some functionality (slide upload, manual stain ordering, slide download) is not available in this mode. Please contact support@pictorlabs.ai with any questions."
+  - banner [ref=e11]:
+    - generic [ref=e13]:
+      - img [ref=e15] [cursor=pointer]
+      - generic [ref=e17]:
+        - img "Support" [ref=e18] [cursor=pointer]
+        - button "more" [ref=e20] [cursor=pointer]:
+          - img "pictor.newqa.guest2@pictorlabs.ai" [ref=e21] [cursor=pointer]
+        - generic [ref=e25] [cursor=pointer]: PictorLabs Hiring Org
+  - generic [ref=e27]:
+    - img [ref=e29]
+    - list [ref=e30]:
+      - listitem [ref=e31]:
+        - button "Dashboard" [ref=e32] [cursor=pointer]:
+          - img [ref=e34] [cursor=pointer]
+          - generic:
+            - generic: Dashboard
+      - listitem [ref=e35]:
+        - button "Model" [active] [ref=e36] [cursor=pointer]:
+          - img [ref=e38] [cursor=pointer]
+          - generic:
+            - generic: Model
+      - listitem [ref=e39]:
+        - button "Reports" [ref=e40] [cursor=pointer]:
+          - img [ref=e42] [cursor=pointer]
+          - generic:
+            - generic: Reports
+      - listitem [ref=e43]:
+        - button "Uploads" [ref=e44] [cursor=pointer]:
+          - img [ref=e46] [cursor=pointer]
+          - generic:
+            - generic: Uploads
+    - button [ref=e47] [cursor=pointer]:
+      - img [ref=e48] [cursor=pointer]
+  - main [ref=e50]:
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - heading "Organization Models" [level=2] [ref=e54]
+        - generic [ref=e55]: Organization Stain Management
+      - generic [ref=e57]:
+        - tablist [ref=e61]:
+          - tab "Stain Management" [selected] [ref=e62] [cursor=pointer]
+        - generic [ref=e66]:
+          - generic [ref=e68]:
+            - generic [ref=e69]: Total Stainers Available
+            - generic [ref=e70]: "6"
+            - generic [ref=e71]: Stain Management
+          - generic [ref=e72]:
+            - heading "Auto Deep Stainer" [level=6] [ref=e73]
+            - generic [ref=e75]:
+              - generic [ref=e77]:
+                - generic [ref=e78]:
+                  - text: CD45 Multiorgan
+                  - generic [ref=e79]: (Immunohistochemistry)
+                - generic [ref=e80]: "Version: version 1"
+                - generic [ref=e82]:
+                  - generic [ref=e83]: For Research Use Only
+                  - text: ", Not for use in diagnostic procedures."
+              - generic [ref=e85]:
+                - generic:
+                  - generic:
+                    - checkbox
+            - paragraph [ref=e88]: Loading stain information...
+            - generic [ref=e90]:
+              - generic [ref=e92]:
+                - generic [ref=e93]:
+                  - text: H&E Multiorgan
+                  - generic [ref=e94]: (Hematoxylin and Eosin)
+                - generic [ref=e95]: "Version: v0.1.0"
+                - generic [ref=e97]:
+                  - generic [ref=e98]: For Research Use Only
+                  - text: ", Not for use in diagnostic procedures."
+              - generic [ref=e100]:
+                - generic:
+                  - generic:
+                    - checkbox [checked]
+            - generic [ref=e102]:
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - text: H&E Multiorgan
+                  - generic [ref=e106]: (Hematoxylin and Eosin)
+                - generic [ref=e107]: "Version: v1.0.0"
+                - generic [ref=e109]:
+                  - generic [ref=e110]: For Research Use Only
+                  - text: ", Not for use in diagnostic procedures."
+              - generic [ref=e112]:
+                - generic:
+                  - generic:
+                    - checkbox
+          - generic [ref=e113]:
+            - heading "Auto Restainer" [level=6] [ref=e114]
+            - generic [ref=e116]:
+              - generic [ref=e118]:
+                - generic [ref=e119]:
+                  - text: PanCK Multiorgan
+                  - generic [ref=e120]: (Immunohistochemistry)
+                - generic [ref=e121]: "Version: v1.0.0"
+                - generic [ref=e123]:
+                  - generic [ref=e124]: For Research Use Only
+                  - text: ", Not for use in diagnostic procedures."
+              - generic [ref=e126]:
+                - generic:
+                  - generic:
+                    - checkbox [checked]
+            - generic [ref=e128]:
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - text: Masson's Trichrome Multiorgan
+                  - generic [ref=e132]: (Special Stain)
+                - generic [ref=e133]: "Version: v1.0.0"
+                - generic [ref=e135]:
+                  - generic [ref=e136]: For Research Use Only
+                  - text: ", Not for use in diagnostic procedures."
+              - generic [ref=e138]:
+                - generic:
+                  - generic:
+                    - checkbox
+```

@@ -1,0 +1,230 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - alert [ref=e6]:
+    - img [ref=e8]
+    - generic [ref=e10]: "Warning: You are logged into a demo account. Some functionality (slide upload, manual stain ordering, slide download) is not available in this mode. Please contact support@pictorlabs.ai with any questions."
+  - banner [ref=e11]:
+    - generic [ref=e13]:
+      - img [ref=e15] [cursor=pointer]
+      - generic [ref=e17]:
+        - img "Support" [ref=e18] [cursor=pointer]
+        - button "more" [ref=e20] [cursor=pointer]:
+          - img "pictor.newqa.guest2@pictorlabs.ai" [ref=e21] [cursor=pointer]
+        - generic [ref=e25] [cursor=pointer]: Default Organization
+  - generic [ref=e27]:
+    - img [ref=e29]
+    - list [ref=e30]:
+      - listitem [ref=e31]:
+        - button "Dashboard" [active] [ref=e32] [cursor=pointer]:
+          - img [ref=e34] [cursor=pointer]
+          - generic:
+            - generic: Dashboard
+      - listitem [ref=e35]:
+        - button "Model" [ref=e36] [cursor=pointer]:
+          - img [ref=e38] [cursor=pointer]
+          - generic:
+            - generic: Model
+      - listitem [ref=e39]:
+        - button "Reports" [ref=e40] [cursor=pointer]:
+          - img [ref=e42] [cursor=pointer]
+          - generic:
+            - generic: Reports
+      - listitem [ref=e43]:
+        - button "Uploads" [ref=e44] [cursor=pointer]:
+          - img [ref=e46] [cursor=pointer]
+          - generic:
+            - generic: Uploads
+    - button [ref=e47] [cursor=pointer]:
+      - img [ref=e48] [cursor=pointer]
+  - main [ref=e50]:
+    - generic [ref=e52]:
+      - heading "Organization Activity" [level=6] [ref=e53]
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - img "Layers icon" [ref=e59]
+            - heading "Slide Overview" [level=5] [ref=e60]
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - paragraph [ref=e63]: Total WSI Slides Scanned
+              - heading "2" [level=6] [ref=e64]
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: Total VSI Slides Stained
+              - heading "2" [level=6] [ref=e67]
+            - generic [ref=e68]:
+              - paragraph [ref=e69]: Total Downloads
+              - heading "0" [level=6] [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]:
+                - paragraph [ref=e73]: Scanned Slides Quality
+                - generic [ref=e74]:
+                  - paragraph [ref=e75]: Pass
+                  - paragraph [ref=e76]: /
+                  - paragraph [ref=e77]: Fail
+              - generic [ref=e78]:
+                - generic [ref=e79]:
+                  - heading "1" [level=6] [ref=e80]
+                  - heading "1" [level=6] [ref=e81]
+                - progressbar [ref=e82]
+        - separator [ref=e84]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - img "Copy icon" [ref=e88]
+            - heading "Stain Usage Overview" [level=5] [ref=e89]
+          - generic [ref=e90]:
+            - generic [ref=e93]:
+              - generic [ref=e95]:
+                - generic [ref=e96]:
+                  - img [ref=e97]
+                  - generic [ref=e99]: H&E
+                - generic [ref=e100]:
+                  - generic [ref=e101]:
+                    - generic [ref=e102]: "1"
+                    - generic [ref=e103]: Processing
+                  - generic [ref=e104]:
+                    - generic [ref=e105]: "0"
+                    - generic [ref=e106]: Completed
+                  - generic [ref=e107]:
+                    - generic [ref=e108]: "0"
+                    - generic [ref=e109]: Failed
+              - generic [ref=e112]:
+                - generic [ref=e113]:
+                  - img [ref=e114]
+                  - generic [ref=e116]: IHC
+                - generic [ref=e117]:
+                  - generic [ref=e118]:
+                    - generic [ref=e119]: "1"
+                    - generic [ref=e120]: Processing
+                  - generic [ref=e121]:
+                    - generic [ref=e122]: "0"
+                    - generic [ref=e123]: Completed
+                  - generic [ref=e124]:
+                    - generic [ref=e125]: "0"
+                    - generic [ref=e126]: Failed
+              - generic [ref=e129]:
+                - generic [ref=e130]:
+                  - img [ref=e131]
+                  - generic [ref=e133]: Special
+                - generic [ref=e134]:
+                  - generic [ref=e135]:
+                    - generic [ref=e136]: "0"
+                    - generic [ref=e137]: Processing
+                  - generic [ref=e138]:
+                    - generic [ref=e139]: "0"
+                    - generic [ref=e140]: Completed
+                  - generic [ref=e141]:
+                    - generic [ref=e142]: "0"
+                    - generic [ref=e143]: Failed
+              - generic [ref=e145]:
+                - generic [ref=e148]: Total
+                - generic [ref=e149]:
+                  - generic [ref=e150]:
+                    - generic [ref=e151]: "2"
+                    - generic [ref=e152]: processing
+                  - generic [ref=e153]:
+                    - generic [ref=e154]: "0"
+                    - generic [ref=e155]: completed
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: "0"
+                    - generic [ref=e158]: failed
+            - generic [ref=e159]:
+              - generic [ref=e162]:
+                - combobox [ref=e163]: Q3 July - September 2025
+                - button "Open" [ref=e165] [cursor=pointer]:
+                  - img [ref=e166] [cursor=pointer]
+                - group
+              - img [ref=e172]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]: JUL
+                  - generic [ref=e183]: AUG
+                  - generic [ref=e184]: SEP
+        - img [ref=e190]:
+          - generic [ref=e198] [cursor=pointer]:
+            - generic [ref=e200] [cursor=pointer]:
+              - generic [ref=e201] [cursor=pointer]: 50%
+              - text: 50%
+            - generic [ref=e203] [cursor=pointer]:
+              - generic [ref=e204] [cursor=pointer]: 50%
+              - text: 50%
+      - generic [ref=e205]:
+        - heading "Organization Overview" [level=6] [ref=e206]
+        - paragraph [ref=e207]: All Organization Slides
+      - generic [ref=e208]:
+        - tablist [ref=e212]:
+          - tab "Slides" [selected] [ref=e213] [cursor=pointer]
+          - tab "Projects" [ref=e214] [cursor=pointer]
+        - generic [ref=e216]:
+          - generic [ref=e217]:
+            - generic [ref=e219]:
+              - img [ref=e220]
+              - textbox "Search" [ref=e222]
+              - group
+            - generic [ref=e223]:
+              - button "Add Filters" [ref=e226] [cursor=pointer]:
+                - generic [ref=e227] [cursor=pointer]:
+                  - img [ref=e228] [cursor=pointer]
+                  - heading "Add Filters" [level=6] [ref=e230] [cursor=pointer]
+              - generic [ref=e231]:
+                - button "Upload Upload Slides":
+                  - generic:
+                    - img "Upload"
+                    - generic: Upload Slides
+            - generic [ref=e232]:
+              - generic [ref=e233]:
+                - generic:
+                  - button "Create / Add to Project" [disabled]:
+                    - generic:
+                      - img
+                      - generic: Create / Add to Project
+              - generic [ref=e234]:
+                - button "Order Stains" [disabled]
+            - generic [ref=e235]:
+              - generic "You can only override Failed QC Slides that haven't been overridden before.":
+                - button "Override" [disabled]
+          - generic [ref=e236]:
+            - generic [ref=e237]:
+              - generic [ref=e239] [cursor=pointer]:
+                - checkbox [ref=e240] [cursor=pointer]
+                - img [ref=e241] [cursor=pointer]
+              - generic [ref=e244]: QC
+              - button "Slide Name" [ref=e247] [cursor=pointer]:
+                - text: Slide Name
+                - img [ref=e248] [cursor=pointer]
+              - button "Image Type" [ref=e252] [cursor=pointer]:
+                - text: Image Type
+                - img [ref=e253] [cursor=pointer]
+              - button "Date" [ref=e257] [cursor=pointer]:
+                - text: Date
+                - img [ref=e258] [cursor=pointer]
+              - generic [ref=e261]: Stains
+              - generic [ref=e263]: Tissue Type
+              - generic [ref=e265]: Species
+            - generic [ref=e266]:
+              - generic [ref=e267]:
+                - generic [ref=e269] [cursor=pointer]:
+                  - checkbox [ref=e270] [cursor=pointer]
+                  - img [ref=e271] [cursor=pointer]
+                - img [ref=e274]
+                - generic [ref=e277] [cursor=pointer]: test_small_bf_1
+                - 'generic "Image type: Brightfield" [ref=e279]': BF
+                - generic [ref=e280]: 18 Sep, 2025
+                - generic [ref=e283] [cursor=pointer]: "1"
+                - generic [ref=e284]: Unknown
+                - generic [ref=e285]: Unknown
+              - generic [ref=e286]:
+                - generic [ref=e288] [cursor=pointer]:
+                  - checkbox [ref=e289] [cursor=pointer]
+                  - img [ref=e290] [cursor=pointer]
+                - img [ref=e293]
+                - generic [ref=e296] [cursor=pointer]: test_small_af_1
+                - 'generic "Image type: Fluorescent" [ref=e298]': AF
+                - generic [ref=e299]: 18 Sep, 2025
+                - generic [ref=e302] [cursor=pointer]: "1"
+                - generic [ref=e303]: Unknown
+                - generic [ref=e304]: Unknown
+            - generic [ref=e307]:
+              - paragraph
+              - button "1" [ref=e310] [cursor=pointer]
+```

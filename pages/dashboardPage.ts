@@ -65,28 +65,30 @@ class DashboardPage {
 
     }
 
-      this.dashboardSection = {
-      slidesTab: page.locator('//button[@role="tab" and normalize-space(text())="Slides"]'),
-      projectsTab: page.locator('//button[@role="tab" and normalize-space(text())="Projects"]'),
-      searchInput: page.locator('input[placeholder="Search"]'),
-      searchIcon: page.locator('svg[@data-testid="SearchOutlinedIcon"]'),
-      addFiltersButton: page.locator('//button[normalize-space(text())="Add Filters"]'),
-      uploadSlidesButton: page.locator('//button[normalize-space(text())="Upload Slides"]'),
-      createProjectButton: page.locator('//button[normalize-space(text())="Create / Add to Project"]'),
-      orderStainsButton: page.locator('//button[normalize-space(text())="Order Stains"]'),
-      overrideButton: page.locator('//button[normalize-space(text())="Override"]'),
-      selectAllCheckbox: page.locator('input[type="checkbox"]'),
-      qcHeader: page.locator('//div[normalize-space(text())="QC"]'),
-      slideNameHeader: page.locator('//span[normalize-space(text())="Slide Name"]'),
-      imageTypeHeader: page.locator('//span[normalize-space(text())="Image Type"]'),
-      dateHeader: page.locator('//span[normalize-space(text())="Date"]'),
-      stainsHeader: page.locator('//div[normalize-space(text())="Stains"]'),
-      tissueTypeHeader: page.locator('//div[normalize-space(text())="Tissue Type"]'),
-      speciesHeader: page.locator('//div[normalize-space(text())="Species"]'),
-      slideName:(Slidename)=> page.locator(`//div[text()="${Slidename}"]`),
-      
+    this.dashboardSection = {
+  slidesTab: page.locator('//button[@role="tab" and normalize-space()="Slides"]'),
+  projectsTab: page.locator('//button[@role="tab" and normalize-space()="Projects"]'),
+  searchInput: page.locator('//input[@placeholder="Search"]'),
+  searchIcon: page.locator('//*[local-name()="svg" and @data-testid="SearchOutlinedIcon"]'),
+  addFiltersButton: page.locator('//button[normalize-space()="Add Filters"]'),
+  uploadSlidesButton: page.locator('//span[normalize-space()="Upload Slides"]/ancestor::button'),
+  createProjectButton: page.locator('//button[normalize-space()="Create / Add to Project"]'),
+  orderStainsButton: page.locator('//button[normalize-space()="Order Stains"]'),
+  overrideButton: page.locator('//button[normalize-space()="Override"]'),
+  selectAllCheckbox: page.locator('//input[@type="checkbox" and @aria-label="Select All"]'),
+  
+  // Headers
+  qcHeader: page.locator('//div[normalize-space()="QC"]'),
+  slideNameHeader: page.locator('//span[normalize-space()="Slide Name"]'),
+  imageTypeHeader: page.locator('//span[normalize-space()="Image Type"]'),
+  dateHeader: page.locator('//span[normalize-space()="Date"]'),
+  stainsHeader: page.locator('//div[normalize-space()="Stains"]'),
+  tissueTypeHeader: page.locator('//div[normalize-space()="Tissue Type"]'),
+  speciesHeader: page.locator('//div[normalize-space()="Species"]'),
 
-      
+  // Dynamic slide name
+  slideName: (name) => page.locator(`//div[normalize-space()="${name}"]`)
+
      
     };
   }

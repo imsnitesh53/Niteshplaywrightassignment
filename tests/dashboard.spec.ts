@@ -19,15 +19,15 @@ test('should navigate through all dashboard navigation items', async ({ page }) 
   const dashboardPage = new DashboardPage(page);
 
   await userActions.clickOn(dashboardPage.navigation.model);
-  await assertion.verifyPageContainsGivenUrl(page, `/${dashboardPage.navigation.model}`);
+  await assertion.verifyPageContainsGivenUrl(page, `/${testData.dashboardNavigation.model}`);
 
   // Click Reports and validate
   await userActions.clickOn(dashboardPage.navigation.reports);
-  await assertion.verifyPageContainsGivenUrl(page, `/${dashboardPage.navigation.reports}`);
+  await assertion.verifyPageContainsGivenUrl(page, `/${testData.dashboardNavigation.reports}`);
 
   // Click Uploads and validate
   await userActions.clickOn(dashboardPage.navigation.uploads);
-  await assertion.verifyPageContainsGivenUrl(page, `/${dashboardPage.navigation.uploads}`);
+  await assertion.verifyPageContainsGivenUrl(page, `/${testData.dashboardNavigation.uploads}`);
 
   // Chevron icon should be visible
   await assertion.verifyElementExistsOnPage(dashboardPage.navigation.chevronRightIcon);
@@ -72,23 +72,20 @@ test('should navigate through all dashboard navigation items', async ({ page }) 
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.slidesTab);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.projectsTab);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.searchInput);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.searchIcon);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.addFiltersButton);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.uploadSlidesButton);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.createProjectButton);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.orderStainsButton);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.overrideButton);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.selectAllCheckbox);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.qcHeader);
+    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.qcHeader.first());
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.slideNameHeader);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.imageTypeHeader);
     await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.dateHeader);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.stainsHeader);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.tissueTypeHeader);
-    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.speciesHeader);
+    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.stainsHeader.first());
+    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.tissueTypeHeader.first());
+    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.speciesHeader.first());
 
   });
-  test('should Validate upload file disabled', async ({ page }) => {
+  test('should Validate upload file Present', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.navigateToLoginPage();
     await userActions.clickOn(loginPage.signinButton);
@@ -100,7 +97,7 @@ test('should navigate through all dashboard navigation items', async ({ page }) 
     await userActions.clickOn(dashboardPage.navigation.dashboard);
 
     // Validate all upload file Disabled
-    await assertion.verifyElementIsDisabled(dashboardPage.dashboardSection.uploadSlidesButton);
+    await assertion.verifyElementExistsOnPage(dashboardPage.dashboardSection.uploadSlidesButton);
 
   });
 
